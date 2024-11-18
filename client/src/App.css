@@ -1,0 +1,66 @@
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mic-button,
+.camera-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mic-button:hover,
+.camera-button:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+
+.containerC {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between columns */
+}
+
+.column {
+  flex: 1; /* Each column takes equal width */
+  max-width: calc(50% - 10px); /* 50% width with some spacing between columns */
+  margin: 5px; /* Add some spacing between columns */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between items */
+}
+
+/* Example styles for items within columns */
+.item {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
